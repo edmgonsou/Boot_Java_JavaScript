@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="css/estiloPainel.css">
+    <script type="module" src="script/scriptPainel.js"></script>
+    <title>PAINEL</title>
+</head>
+
+<body>
+    <main class="flex">
+        <nav id="menuLateral" class="flex">
+            <a href="#cli" class="flex" id="clientes">
+                <span class="material-icons">group_add</span>
+                Clientes
+            </a>
+            <a href="#prod" class="flex" id="produtos">
+                <span class="material-icons">card_giftcard</span>
+                Produtos
+            </a>
+            <a href="#ped" class="flex" id="pedidos">
+                <span class="material-icons">shopping_cart</span>
+                Pedidos
+            </a>
+        </nav>
+
+        <div id="areaOut" class="flex">
+            <!-- Inicio do formulario Cliente -->
+            <section id="cli" class="flex">
+                <fieldset id="formCli" class="flex">
+                    <header class="flex" id="headCli">
+                        <div>
+                            <h3>Clientes</h3>
+                        </div>
+                        <div class="flex alinha">
+                            <input type="button" class="btn" value="x">
+                        </div>
+                    </header>
+                    <div id="corpo" class="flex">
+                        <label for="" class="flex">Código</label>
+                        <input type="text">
+                        <label for="" class="flex">Nome</label>
+                        <input type="text">
+                        <label for="" class="flex">Data do Cadastro</label>
+                        <input type="date">
+                    </div>
+                    <footer id="rodapeCli" class="flex">
+                        <div>
+                            <input type="button" name="" value="<" class="btnMove">
+                            <input type="button" name="" value=">" class="btnMove">
+                        </div>
+                        <div class="flex alinha">
+                            <input type="button" name="" value="NOVO" class="btnNovo">
+                            <input type="button" name="" value="SALVAR" class="btnSalvar">
+                        </div>
+                    </footer>
+                </fieldset>
+            </section>
+            <!-- Inicio do formulario Produto -->
+            <section id="prod" class="flex">
+                <fieldset id="formProd" class="flex">
+                    <header class="flex" id="headProd">
+                        <div>
+                            <h3>Produto</h3>
+                        </div>
+                        <div class="flex alinha">
+                            <input type="button" class="btn" value="x">
+                        </div>
+                    </header>
+                    <div id="corpoProd" class="flex">
+                        <label for="" class="flex">Código</label>
+                        <input type="text">
+                        <label for="" class="flex">Descrição</label>
+                        <input type="text">
+                        <label for="" class="flex">Preço</label>
+                        <input type="text">
+                        <label for="" class="flex">Quantidade</label>
+                        <input type="text">
+                    </div>
+                    <footer id="rodapeProd" class="flex">
+                        <div>
+                            <input type="button" name="" value="<" class="btnMove">
+                            <input type="button" name="" value=">" class="btnMove">
+                        </div>
+                        <div class="flex alinha">
+                            <input type="button" name="" value="NOVO" class="btnNovo">
+                            <input type="button" name="" value="SALVAR" class="btnSalvar">
+                        </div>
+                    </footer>
+                </fieldset>
+            </section>
+            <!-- Inicio do formulario Pedido -->
+            <section id="ped" class="flex">
+                <fieldset id="formPed" class="flex">
+                    <header id="headPed" class="flex">
+                        <div>
+                            <h3>Pedido</h3>
+                        </div>
+                        <div class="flex alinha">
+                            <input type="button" class="btn" value="x">
+                        </div>
+                    </header>
+                    <div id="corpoPed" class="flex">
+                        <label for="" class="flex">Código do Cliente</label>
+                        <input type="text">
+                        <label for="" class="flex">Cliente</label>
+                        <input type="text">
+                        <div id="localiza">
+                            <h5>Localizar Produto</h5>
+
+                        </div>
+                    </div>
+                    <footer id="rodapePed" class="flex ">
+                        <div id="itensPed" class="flex flex-column">
+                            <h5>Itens do Pedido</h5>
+
+                            <div id="listaProdutos" class="flex">
+
+                                <ul id="PedidoDoCliente">
+
+                                </ul>
+
+                                <div id="totalCompras" class="flex alinha">
+
+                                    <input type="text" id="mostraTotalCompra" name="" value="" disabled class="flex">
+                                </div>
+                            </div>
+                        </div>
+                    </footer>
+                </fieldset>
+            </section>
+        </div>
+        </div>
+        </div>
+    </main>
+</body>
+
+</html>

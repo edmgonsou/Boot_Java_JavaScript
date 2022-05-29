@@ -1,0 +1,4 @@
+1. Esta afirmação está correta:"O JS é uma linguagem interpretada, portando irá gerar um código fonte. Isto está correto". Explique.
+Resp.: Não está correto, ou parcialmente correto. O JS é uma linguagem interpretada, porém ela não gera um arquivo, são os compiladores que gera um arquivo executável.
+2. Ainda nnos dias de hoje o JS só pode ser usado por meio de um browser.
+Resp.: Não, ele pode ser utilizado fora com browser um utilizando um fammework, como exemplo o Node.js.

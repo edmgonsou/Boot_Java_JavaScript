@@ -1,0 +1,11 @@
+1. Dê um exemplo de uma variável obecendo a boa prática camelCase.
+Resp.: resultDaMultip
+
+2. Por padrão, qual tipo de dado atribuido a uma variável quando esta não recebe nenhum valor?
+Resp.: do tipo undefined
+
+3. Quais são as duas categórias de tipos de dados do JS?
+Resp.: os primitivos e os não primitivos.
+
+4. É verdade que o JS é uma linguagem server-side? Explique.
+Resp.: não é verdade, o JS é uma linguagem client-side, pois ele executa do lado do cliente, no computador do usuário enquanto o server-side é executado do lado do web-server.

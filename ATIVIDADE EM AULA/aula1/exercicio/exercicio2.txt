@@ -1,0 +1,5 @@
+1. Qual foi a principal finalidade do JS desde a sua criação?
+Resp.: A principal finalidade era dinamizar as páginas web, ou seja dar mais as páginas, fazendo com que o usuário tivesse uma maior experiência na internet
+
+2. Qual empresa originou o JS e quando isso aconteceu?
+Resp.: O JS originou na empresa Netscape na decada de 1990, e o primeiro nome do JS era LiveScript

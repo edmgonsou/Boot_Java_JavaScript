@@ -1,0 +1,193 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    font-size: 100%;
+    --border-color-padrao: #CFd8DC;
+    --fonte-padrao: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.flex {
+    display: flex;
+}
+
+main {
+    width: 100%;
+    height: 100vh;
+    flex-wrap: wrap;
+}
+
+main nav#menuLateral {
+    width: 20%;
+    height: 100vh;
+    border-right: 2px solid var(--border-color-padrao);
+    flex-direction: column;
+    flex-grow: 1;
+}
+
+main nav#menuLateral a {
+    width: 100%;
+    height: 6vh;
+    padding: 4px 2px 4px 2px;
+    margin-top: 1px;
+    font-family: var(--fonte-padrao);
+    font-size: clamp(0.6rem, 1.2vw, 2rem);
+    color: #000;
+    text-decoration: none;
+    align-items: center;
+}
+
+main nav#menuLateral span {
+    font-size: clamp(0.6rem, 1.5vw, 2rem);
+    padding: 2px;
+    margin-right: 10px;
+}
+
+
+main div#areaOut {
+    width: 80%;
+    height: 100vh;
+    flex-grow: 1;
+    justify-content: center;
+
+
+}
+
+section#cli,
+section#prod {
+    width: 30%;
+    height: auto;
+    margin-top: 2%;
+    display: none;
+}
+section#ped {
+    width: 60%;
+    height: auto;
+    margin-top: 2%;
+    display: none;
+}
+
+section#cli fieldset#formCli,
+section#prod fieldset#formProd,
+section#ped fieldset#formPed {
+    width: 100%;
+    height: auto;
+    padding: 10px;
+    flex-direction: column;
+    border: 2px solid var(--border-color-padrao);
+}
+
+header#headCli,
+header#headProd,
+header#headPed {
+    width: 100%;
+    height: auto;
+}
+
+header#headCli div,
+header#headProd div,
+header#headPed div {
+    width: 50%;
+    height: auto;
+}
+
+.alinha {
+    justify-content: end;
+
+}
+
+h3 {
+    text-decoration: underline;
+    font-family: var(--fonte-padrao);
+}
+
+.btn {
+    border: none;
+    color: red;
+    cursor: pointer;
+    font-weight: bold;
+    background-color: #fff;
+}
+
+fieldset#formCli div#corpo,
+fieldset#formProd div#corpoProd,
+fieldset#formPed div#corpoPed {
+    width: 100%;
+    height: auto;
+    margin-top: 20px;
+    flex-direction: column;
+}
+
+input,
+label {
+    height: 25px;
+    align-items: end;
+    font-family: var(--fonte-padrao);
+    font-size: clamp(0.6rem, 1.1vw, 2rem);
+}
+
+footer#rodapeCli,
+footer#rodapeProd,
+footer#rodapePed {
+    width: 100%;
+    height: auto;
+    margin-top: 2px;
+}
+
+footer#rodapeCli div,
+footer#rodapeProd div{
+    width: 50%;
+    height: auto;
+    padding: 5px;
+
+}
+
+.btnMove {
+    width: 50px;
+    height: 20px;
+    background-color: rgb(134, 72, 196);
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    font-family: var(--fonte-padrao);
+    font-size: clamp(0.6rem, 1vw, 2rem);
+}
+
+.btnNovo {
+    width: 70px;
+    height: 20px;
+    background-color: rgb(48, 48, 216);
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    font-family: var(--fonte-padrao);
+    font-size: clamp(0.6rem, 1vw, 2rem);
+
+}
+
+.btnSalvar {
+    width: 70px;
+    height: 20px;
+    margin-left: 5px;
+    background-color: green;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    font-family: var(--fonte-padrao);
+    font-size: clamp(0.6rem, 1vw, 2rem);
+}
+div#localiza{
+    width: 100%;
+    height: 10vh;
+    margin-top: 20px;
+    border-top: 2px solid rgb(125, 124, 124);
+    border-bottom: 2px solid rgb(125, 124, 124);
+    
+}
+div#itensPed{
+    width: 100%;
+    height: auto;
+}

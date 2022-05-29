@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AULA 6</title>
+</head>
+<script>
+    // var qualquer;//global
+    // let qq = "variavel let";//global
+    // const valorConstante = 100;//global
+
+    // if(true){
+    //     console.log(valorConstante);
+    //     var varDentroDoIf = "Estou dentro do if sou uma var";
+    //     let letDentroDoIf = "Sou uma let estou dentro do if";
+    // }
+    // console.log(letDentroDoIf);
+
+    function soma(){
+        console.log(1 + 3);
+    }
+    //soma();
+
+    function concatenar(){
+        var nome = "Edmilson";
+        var sobre = " Gonzaga";
+        alert(nome + sobre);
+    }
+   // concatenar();
+
+   function novaConcatenar(nome, sobre){
+       document.write(nome + " " + sobre);
+   }
+   novaConcatenar("Edmilson", "Gonzaga");
+
+   let semnome = function(){
+       alert("Estou em uma função anonima");
+   }
+   //semnome();
+
+   let funComPars = function(idade, idadePar){
+       if(idade > idadePar){
+        alert("Você tem idade maior que "+ idadePar);
+       }else{
+        alert("Você tem idade maior que "+ idadePar);
+       }
+   }
+
+   funComPars(20,18);
+   funComPars(17,18);
+</script>
+<body>
+    
+</body>
+</html>
