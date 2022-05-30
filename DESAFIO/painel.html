@@ -8,6 +8,7 @@
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="css/estiloPainel.css">
     <script type="module" src="script/scriptPainel.js"></script>
+    
     <title>PAINEL</title>
 </head>
 
@@ -37,21 +38,21 @@
                             <h3>Clientes</h3>
                         </div>
                         <div class="flex alinha">
-                            <input type="button" class="btn" value="x">
+                            <input type="button" class="btn" value="x" id="btnFechCli">
                         </div>
                     </header>
                     <div id="corpo" class="flex">
                         <label for="" class="flex">Código</label>
-                        <input type="text">
+                        <input type="text" id="codCliente">
                         <label for="" class="flex">Nome</label>
-                        <input type="text">
+                        <input type="text" id="nomeCliente">
                         <label for="" class="flex">Data do Cadastro</label>
-                        <input type="date">
+                        <input type="text"  id="dataCadCli">
                     </div>
                     <footer id="rodapeCli" class="flex">
                         <div>
-                            <input type="button" name="" value="<" class="btnMove">
-                            <input type="button" name="" value=">" class="btnMove">
+                            <input type="button" name="" value="<" class="btnMove" id="btnRetro">
+                            <input type="button" name="" value=">" class="btnMove" id="btnAvanc">
                         </div>
                         <div class="flex alinha">
                             <input type="button" name="" value="NOVO" class="btnNovo">
@@ -68,7 +69,7 @@
                             <h3>Produto</h3>
                         </div>
                         <div class="flex alinha">
-                            <input type="button" class="btn" value="x">
+                            <input type="button" class="btn" value="x" id="btnFechProd">
                         </div>
                     </header>
                     <div id="corpoProd" class="flex">
@@ -101,7 +102,7 @@
                             <h3>Pedido</h3>
                         </div>
                         <div class="flex alinha">
-                            <input type="button" class="btn" value="x">
+                            <input type="button" class="btn" value="x" id="btnFechPed">
                         </div>
                     </header>
                     <div id="corpoPed" class="flex">
