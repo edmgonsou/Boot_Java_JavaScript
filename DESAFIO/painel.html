@@ -8,7 +8,7 @@
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="css/estiloPainel.css">
     <script type="module" src="script/scriptPainel.js"></script>
-    
+
     <title>PAINEL</title>
 </head>
 
@@ -43,11 +43,11 @@
                     </header>
                     <div id="corpo" class="flex">
                         <label for="" class="flex">Código</label>
-                        <input type="text" id="codCliente">
+                        <input type="text" id="codCliente" disabled>
                         <label for="" class="flex">Nome</label>
-                        <input type="text" id="nomeCliente">
+                        <input type="text" id="nomeCliente" required>
                         <label for="" class="flex">Data do Cadastro</label>
-                        <input type="text"  id="dataCadCli">
+                        <input type="text" id="dataCadCli" disabled>
                     </div>
                     <footer id="rodapeCli" class="flex">
                         <div>
@@ -55,8 +55,8 @@
                             <input type="button" name="" value=">" class="btnMove" id="btnAvanc">
                         </div>
                         <div class="flex alinha">
-                            <input type="button" name="" value="NOVO" class="btnNovo">
-                            <input type="button" name="" value="SALVAR" class="btnSalvar">
+                            <input type="button" name="" value="NOVO" class="btnNovo" id="btnCliNov">
+                            <input type="button" name="" value="SALVAR" class="btnSalvar" id="btnCliSalv">
                         </div>
                     </footer>
                 </fieldset>
@@ -74,22 +74,22 @@
                     </header>
                     <div id="corpoProd" class="flex">
                         <label for="" class="flex">Código</label>
-                        <input type="text">
+                        <input type="text" id="codProduto" disabled>
                         <label for="" class="flex">Descrição</label>
-                        <input type="text">
+                        <input type="text" id="descProduto">
                         <label for="" class="flex">Preço</label>
-                        <input type="text">
+                        <input type="text" id="precoProduto">
                         <label for="" class="flex">Quantidade</label>
-                        <input type="text">
+                        <input type="text" id="qtdEstoqueProd">
                     </div>
                     <footer id="rodapeProd" class="flex">
                         <div>
-                            <input type="button" name="" value="<" class="btnMove">
-                            <input type="button" name="" value=">" class="btnMove">
+                            <input type="button" name="" value="<" class="btnMove" id="btnProdRetro">
+                            <input type="button" name="" value=">" class="btnMove" id="btnProdAvanc">
                         </div>
                         <div class="flex alinha">
-                            <input type="button" name="" value="NOVO" class="btnNovo">
-                            <input type="button" name="" value="SALVAR" class="btnSalvar">
+                            <input type="button" name="" value="NOVO" class="btnNovo" id="btnProdNov">
+                            <input type="button" name="" value="SALVAR" class="btnSalvar" id="btnProdSalv">
                         </div>
                     </footer>
                 </fieldset>
@@ -107,28 +107,43 @@
                     </header>
                     <div id="corpoPed" class="flex">
                         <label for="" class="flex">Código do Cliente</label>
-                        <input type="text">
+                        <input type="text" id="codCliPed">
                         <label for="" class="flex">Cliente</label>
-                        <input type="text">
-                        <div id="localiza">
+                        <input type="text" id="nomeCliPed" disabled>
+                        <div id="localiza" class="flex">
                             <h5>Localizar Produto</h5>
-
+                            <div class="flex">
+                                <input type="text" id="codProdPed">
+                                <input type="text" id="nomeProdPed" disabled>
+                                <input type="text" id="precoProdPed" disabled>
+                                <input type="text" id="quantProdPed">
+                                <input type="button" value="Lançar no Pedido" id="btnLancar">
+                            </div>
                         </div>
                     </div>
-                    <footer id="rodapePed" class="flex ">
-                        <div id="itensPed" class="flex flex-column">
+                    <footer id="rodapePed" class="flex">
+                        <div id="itensPed">
                             <h5>Itens do Pedido</h5>
-
                             <div id="listaProdutos" class="flex">
 
-                                <ul id="PedidoDoCliente">
+                                <table>
+                                    <thead>
+                                        <tr id="cabecalho">
+                                            <th>Item</th>
+                                            <th>Descrição</th>
+                                            <th>Preço</th>
+                                            <th>Qtd</th>
+                                            <th>Sub Total</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody id="listItem">
+                                    </tbody>
+                                </table>
 
-                                </ul>
+                            </div>
 
-                                <div id="totalCompras" class="flex alinha">
-
-                                    <input type="text" id="mostraTotalCompra" name="" value="" disabled class="flex">
-                                </div>
+                            <div id="totalCompras" class="flex">
+                                <input type="text" id="mostraTotalCompra" name="" value="" disabled class="flex">
                             </div>
                         </div>
                     </footer>
